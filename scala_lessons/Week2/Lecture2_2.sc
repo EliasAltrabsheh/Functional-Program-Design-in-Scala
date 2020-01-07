@@ -1,4 +1,4 @@
-import Week2
+
 /*
 We’ve seen a number of immutable collections that provide powerful
 operations, in particular for combinatorial search.
@@ -29,6 +29,28 @@ miss the second prime number all together.
 
 //method 1  of streams
 
+trait Stream[+A] extends Seq[A]
+{
+  def isEmpty: Boolean
+  def head: A
+  def tail: Stream[A]
+}
+
+//Concrete implementations of streams are defined in the Stream
+//companion object. Here’s a first draft:
+/*object Stream {
+  def cons[T](hd: T, tl: => Stream[T]) = new Stream[T] {
+    def isEmpty = false
+    def head = hd
+    def tail = tl
+  }
+  val empty = new Stream[Nothing] {
+    def isEmpty = true
+    def head = throw new NoSuchElementException("empty.head")
+    def tail = throw new NoSuchElementException("empty.tail")
+  }
+}*/
+
 val xs = Stream.cons(1, Stream.cons(2, Stream.empty))
 
 // ? is there as the tail of collection hasnt been defined yet
@@ -39,6 +61,7 @@ val xs = Stream.cons(1, Stream.cons(2, Stream.empty))
 // stream range function is Broken out into this
 
 def streamRange(lo: Int, hi: Int): Stream[Int] =
+  print(lo + "")
   if (lo >= hi) Stream.empty
   else Stream.cons(lo, streamRange(lo + 1, hi))
 
@@ -52,24 +75,3 @@ def listRange(lo: Int, hi: Int): List[Int] =
 
 /// breakdown of implementation of strings
 
-trait Stream[+A] extends Seq[A]
-{
-  def isEmpty: Boolean
-  def head: A
-  def tail: Stream[A]
-}
-
-//Concrete implementations of streams are defined in the Stream
-//companion object. Here’s a first draft:
-object Stream {
-  def cons[T](hd: T, tl: => Stream[T]) = new Stream[T] {
-    def isEmpty = false
-    def head = hd
-    def tail = tl
-  }
-  val empty = new Stream[Nothing] {
-    def isEmpty = true
-    def head = throw new NoSuchElementException("empty.head")
-    def tail = throw new NoSuchElementException("empty.tail")
-  }
-}

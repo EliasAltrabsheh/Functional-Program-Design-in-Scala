@@ -11,6 +11,7 @@ There are many domains outside collections that afford such an
 
 // we start off by importing the random integer from java
 import java.util.Random
+
 val rand = new Random
 rand.nextInt()
 
@@ -23,7 +24,7 @@ trait Generator[+T] {
   def generate: T
 }
 
-object generators {
+
   // take some instance for this as integers
 
   val integers = new Generator[Int] {
@@ -47,6 +48,23 @@ val booleans = new Generator[Boolean] {
     def generate = integers.generate > 0
   }
 
+  val pairs = new Generator[(Int,Int)] {
+    def generate = (integers.generate ,integers.generate)
+  }
 
-}
 
+
+
+
+//val boolean_1 = for(x <- generators.integers) yield x > 0
+
+def pairs_1[T,U](t:Generator[T],u:Generator[U]) =
+  for{
+ x <- t
+ y <- u
+} yield (x,y)
+
+/*val booleans_2 = integers map(x => x > 0)
+def pairs_2[T, U](t: Generator[T], u: Generator[U]) =
+  t flatMap(x => u map (y => (x, y)))
+*/
