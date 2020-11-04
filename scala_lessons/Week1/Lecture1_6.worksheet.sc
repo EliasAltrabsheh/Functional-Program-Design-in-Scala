@@ -30,12 +30,21 @@ m map f == m flatMap (x => unit(f(x)))
 
 
 To qualify as a monad, a type has to satisfy three laws:
+
 1) Associativity:
 m flatMap f flatMap g == m flatMap (x => f(x) flatMap g)
+
 2) Left unit
 unit(x) flatMap f == f(x)
+
+
 3) Right unit
 m flatMap unit == m
 
  */
+
+trait M[T] {
+  def flatMap[U](f: T => M[U]): M[U]
+  def unit[T](x: T): M[T]
+}
 

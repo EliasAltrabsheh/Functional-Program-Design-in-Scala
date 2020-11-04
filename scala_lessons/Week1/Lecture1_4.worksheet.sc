@@ -11,7 +11,7 @@ for (x <- e1) yield e2
 is translated to
 e1.map(x => e2)
 
-*/
+ */
 
 /*
 second exertions is rewritten as
@@ -22,4 +22,17 @@ for (x <- e1.withFilter(x => f); s) yield e2
 
 
  */
+def isPrime(i: Int): Boolean = {
+  if (i <= 1)
+    false
+  else if (i == 2)
+    true
+  else
+    !(2 to (i - 1)).exists(x => i % x == 0)
+}
 
+for {
+  i <- 1 until (10)
+  j <- 1 until (10)
+  if isPrime(i + j)
+} yield (i, j)
