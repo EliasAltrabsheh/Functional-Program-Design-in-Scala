@@ -1,6 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\d80100\Desktop\miscellaneous\Technical\Git\Functional-Program-Design-in-Scala\assignment\src\main\scala\quickcheck\QuickCheck.scala:10:30: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Int(0)[0m
-[0m[[0m[31merror[0m] [0m[0m required: org.scalacheck.Gen[QuickCheckHeap.this.H][0m
-[0m[[0m[31merror[0m] [0m[0m  lazy val genHeap: Gen[H] = 0[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
