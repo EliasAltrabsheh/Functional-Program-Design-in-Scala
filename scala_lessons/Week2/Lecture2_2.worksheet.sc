@@ -29,41 +29,51 @@ miss the second prime number all together.
 
 //method 1  of streams
 
-trait Stream[+A] extends Seq[A]
-{
-  def isEmpty: Boolean
-  def head: A
-  def tail: Stream[A]
-}
+// trait Stream[+A] extends Seq[A]
+// {
+//   def isEmpty: Boolean
+//   def head: A
+//   def tail: Stream[A]
+// }
 
-//Concrete implementations of streams are defined in the Stream
-//companion object. Here’s a first draft:
-/*object Stream {
-  def cons[T](hd: T, tl: => Stream[T]) = new Stream[T] {
-    def isEmpty = false
-    def head = hd
-    def tail = tl
-  }
-  val empty = new Stream[Nothing] {
-    def isEmpty = true
-    def head = throw new NoSuchElementException("empty.head")
-    def tail = throw new NoSuchElementException("empty.tail")
-  }
-}*/
+// Concrete implementations of streams are defined in the Stream
+// companion object. Here’s a first draft:
+// object Stream {
+//   def cons[T](hd: T, tl: => Stream[T]) = new Stream[T] {
+//     def isEmpty = false
+//     def head = hd
+//     def tail = tl
+//   }
+//   val empty = new Stream[Nothing] {
+//     def isEmpty = true
+//     def head = throw new NoSuchElementException("empty.head")
+//     def tail = throw new NoSuchElementException("empty.tail")
+//   }
+// }
 
 val xs = Stream.cons(1, Stream.cons(2, Stream.empty))
 
 // ? is there as the tail of collection hasnt been defined yet
 
 //method 2 of streams
-(1 to 1000).toStream
+var streamThousand = (1 to 1000).toStream
+var streamPrime = ((1 to 1000).toStream filter isPrime)
 
+
+
+def isPrime(i: Int): Boolean =
+    if (i <= 1)
+        false
+    else if (i == 2)
+        true
+    else
+        !(2 until i).exists(n => i % n == 0)
 // stream range function is Broken out into this
 
-def streamRange(lo: Int, hi: Int): Stream[Int] =
-  print(lo + "")
-  if (lo >= hi) Stream.empty
-  else Stream.cons(lo, streamRange(lo + 1, hi))
+// def streamRange(lo: Int, hi: Int): Stream[Int] =
+//   print(lo + "")
+//   if (lo >= hi) Stream.empty
+//   else Stream.cons(lo, streamRange(lo + 1, hi))
 
 // stream range function is applied to list
 
@@ -74,4 +84,3 @@ def listRange(lo: Int, hi: Int): List[Int] =
 
 
 /// breakdown of implementation of strings
-
