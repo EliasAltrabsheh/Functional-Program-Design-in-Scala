@@ -1,0 +1,205 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "assignment",
+        "directory": "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment",
+        "workspaceDir": "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment",
+        "sources": [
+            "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment\\src\\main\\scala-2.13",
+            "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment\\src\\main\\scala",
+            "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment\\src\\main\\java",
+            "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment\\target\\scala-2.13\\src_managed\\main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalacheck\\scalacheck_2.13\\1.14.0\\scalacheck_2.13-1.14.0.jar",
+            "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.0\\scala-library-2.13.0.jar",
+            "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar"
+        ],
+        "out": "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment\\.bloop\\assignment",
+        "classesDir": "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment\\.bloop\\assignment\\scala-2.13\\classes",
+        "resources": [
+            "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment\\src\\main\\resources",
+            "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment\\target\\scala-2.13\\resource_managed\\main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.0",
+            "options": [
+                "-language:implicitConversions",
+                "-deprecation"
+            ],
+            "jars": [
+                "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.0\\scala-reflect-2.13.0.jar",
+                "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.0\\scala-library-2.13.0.jar",
+                "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-compiler\\2.13.0\\scala-compiler-2.13.0.jar",
+                "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.0\\scala-library-2.13.0.jar",
+                "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-compiler\\2.13.0\\scala-compiler-2.13.0.jar",
+                "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\jline\\jline\\2.14.6\\jline-2.14.6.jar"
+            ],
+            "analysis": "C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment\\target\\streams\\compile\\bloopAnalysisOut\\$global\\streams\\inc_compile_2.13.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "C:\\Users\\d80100\\AppData\\Local\\Programs\\AdoptOpenJDK\\jdk-11.0.8.10-hotspot",
+                "options": [
+                    "-Duser.dir=C:\\Users\\d80100\\Desktop\\miscellaneous\\Technical\\Git\\Functional-Program-Design-in-Scala\\assignment"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scalacheck",
+                    "name": "scalacheck_2.13",
+                    "version": "1.14.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalacheck_2.13",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalacheck\\scalacheck_2.13\\1.14.0\\scalacheck_2.13-1.14.0.jar"
+                        },
+                        {
+                            "name": "scalacheck_2.13",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalacheck\\scalacheck_2.13\\1.14.0\\scalacheck_2.13-1.14.0-sources.jar"
+                        },
+                        {
+                            "name": "scalacheck_2.13",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalacheck\\scalacheck_2.13\\1.14.0\\scalacheck_2.13-1.14.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-sbt",
+                    "name": "test-interface",
+                    "version": "1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "test-interface",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar"
+                        },
+                        {
+                            "name": "test-interface",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0-sources.jar"
+                        },
+                        {
+                            "name": "test-interface",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.0\\scala-library-2.13.0.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.0\\scala-library-2.13.0-sources.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.0\\scala-library-2.13.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.0",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.0\\scala-library-2.13.0.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.0\\scala-library-2.13.0-sources.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\d80100\\.coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.0\\scala-library-2.13.0-javadoc.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
