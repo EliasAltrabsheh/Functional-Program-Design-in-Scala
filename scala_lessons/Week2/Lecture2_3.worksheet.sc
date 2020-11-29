@@ -25,6 +25,7 @@ def expr = {
   def z = { print("z"); 3 }
   z + y + x + z + y + x
 }
+
 expr
 
 
@@ -36,11 +37,20 @@ def streamRange(lo: Int, hi: Int): Stream[Int] =
 val xs = Stream.cons(1, Stream.cons(2, Stream.empty))
 
 
-
-
 (streamRange(1000, 10000) filter isPrime) apply 1
- (if (1000 >= 10000) empty // by expanding streamRange
-else cons(1000, streamRange(1000 + 1, 10000))
-  .filter(isPrime).apply(1)
-  --> cons(1000, streamRange(1000 + 1, 10000)) // by evaluating if
-  .filter(isPrime).apply(1)
+
+def isPrime(i: Int): Boolean =
+    if (i <= 1)
+        false
+    else if (i == 2)
+        true
+    else
+        !(2 until i).exists(n => i % n == 0)
+
+// (streamRange(1000, 10000) filter isPrime) apply 1
+//  (if (1000 >= 10000) empty // by expanding streamRange
+// else {cons(1000, streamRange(1000 + 1, 10000))
+//   .filter(isPrime).apply(1)
+//   --> cons(1000, streamRange(1000 + 1, 10000)) // by evaluating if
+//   .filter(isPrime).apply(1)
+// }
