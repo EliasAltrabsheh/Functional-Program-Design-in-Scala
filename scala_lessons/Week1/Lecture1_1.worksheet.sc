@@ -72,6 +72,7 @@ val f2: PartialFunction[String,String] = {
 
 f2.isDefinedAt("ping")
 
+f2.isDefinedAt("yeah")
 
 
 
@@ -94,11 +95,3 @@ val f4: PartialFunction[List[Int],String] = {
 }
 
 f4.isDefinedAt(List(1,2,3))
-
-
-
-
-
-
-
-

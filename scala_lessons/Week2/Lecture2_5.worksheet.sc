@@ -1,7 +1,18 @@
-package Week2
 
 
-  // Pouring takes one entry per glass
+object test
+{
+  val problem = new Pouring(Vector(4,9))
+}
+
+
+test.problem
+test.problem.moves
+test.problem.pathSets.take(3).toList
+test.problem.solution(20)
+
+
+// Pouring takes one entry per glass
   class Pouring(capacity: Vector[Int])
   {
 
@@ -79,16 +90,3 @@ package Week2
         if path.endState contains target
       }yield path
 }
-
-
-
-
-/* solution for right fold breakdown
-** we identified that  we could use a right fold making it much elegant solution to have
-def endState:State = trackState(history)
- private trackState(xs:List[Move]):State = xs match {
-    case Nil => initialState
-    case move :: xs1 => move change trackState(xs1)
-
-  } // track state is an auxiliry function that we define a paramatch in it
- */
